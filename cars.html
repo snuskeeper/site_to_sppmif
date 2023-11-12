@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Autos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-wrapper d-f ai-end">
+                <div class="header__logo-box">
+                    <a href="./welcome.html">
+                        <img src="./img/logo.png" alt="" class="header__logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="d-f ai-c nav__list">
+                        <li class="nav__item">
+                            <a href="./cars.html" class="nav__link">Автомобили</a>
+                            <div class="submenu"> <!-- Используем класс left для подпунктов слева -->
+                                <ul>
+                                    <li><a href="cars.html#amg-c">AMG C</a></li>
+                                    <li><a href="cars.html#amg-gle">AMG GLE</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./owners.html" class="nav__link">Владельцам</a>
+                            <div class="submenu left"> <!-- Используем класс left для подпунктов слева -->
+                                <ul>
+                                    <li><a href="owners.html#znak">Интерактивное знакомство</a></li>
+                                    <li><a href="owners.html#ruk">Онлайн-версия руководства по эксплуатации</a></li>
+                                    <li><a href="owners.html#app">Приложение Mercedes-Benz Guides</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./owners.html" class="nav__link">Сервис</a>
+                            <div class="submenu left"> <!-- Используем класс left для подпунктов слева -->
+                                <ul>
+                                    <li><a href="sto.html#garant">Гарантия и сервисные планы</a></li>
+                                    <li><a href="sto.html#to">Запись на ТО</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="car__block">
+                <div class="car d-f ai-c">
+                    <div class="car__text d-f">
+                        <div class="main__title" id="amg-c">
+                            Mercedes-Benz<br>AMG C 63 Coupe 2020
+                        </div>
+                        <div class="main__btn d-f ai-c">
+                            <button class="first" onclick="popup()">
+                                Узнать больше
+                            </button>
+                            <button class="more">
+                                Тест-драйв
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car__pic">
+                        <div class="slider demo">
+                            <div class="item item1">
+                                <img src="./img/cars/first/0.png" alt="" class="dva">
+                            </div>
+                            <div class="item item2">
+                                <img src="./img/cars/first/1.png" alt="" class="raz">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="car__info">
+                    <ul class="car__info-list d-f">
+                        <li class="info__item">
+                            <p class="charact">
+                                Крутящий момент
+                            </p>
+                            <p class="value">
+                                от 520 до 850 Нм
+                            </p>
+                        </li>
+                        <li class="info__item">
+                            <p class="charact">
+                                Разгон
+                            </p>
+                            <p class="value">
+                                от 3,8 до 5,3 с
+                            </p>
+                            <p class="dop">
+                                с 0 до 100 км/ч
+                            </p>
+                        </li>
+                        <li class="info__item">
+                            <p class="charact">
+                                Мощность
+                            </p>
+                            <p class="value">
+                                от 435 до 612 л.с.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="condition">
+                    <p class="charact">
+                        от 4 650 000 руб., вкл. НДС*
+                    </p>
+                </div>
+                <hr class="split">
+            </div>
+            <div class="car__block">
+                <div class="car d-f ai-c">
+                    <div class="car__text d-f">
+                        <div class="main__title" id="amg-gle">
+                            Mercedes-Benz<br>AMG GLE Coupe 2020
+                        </div>
+                        <div class="main__btn d-f ai-c">
+                            <button class="first" onclick="popup()">
+                                Узнать больше
+                            </button>
+                            <button class="more">
+                                Тест-драйв
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car__pic">
+                        <div class="slider demo-horizontal">
+                            <div class="item item1">
+                                <img src="./img/cars/second/0.png" alt="" class="sdva">
+                            </div>
+                            <div class="item item2">
+                                <img src="./img/cars/second/1.png" alt="" class="sraz">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+                <div class="car__info">
+                    <ul class="car__info-list d-f">
+                        <li class="info__item">
+                            <p class="charact">
+                                Крутящий момент
+                            </p>
+                            <p class="value">
+                                от 520 до 850 Нм
+                            </p>
+                        </li>
+                        <li class="info__item">
+                            <p class="charact">
+                                Разгон
+                            </p>
+                            <p class="value">
+                                от 3,8 до 5,3 с
+                            </p>
+                            <p class="dop">
+                                с 0 до 100 км/ч
+                            </p>
+                        </li>
+                        <li class="info__item">
+                            <p class="charact">
+                                Мощность
+                            </p>
+                            <p class="value">
+                                от 435 до 612 л.с.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="condition">
+                    <p class="charact">
+                        от 9 350 000 руб., вкл. НДС*
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <hr class="split">
+            <div class="footer-wrapper">
+                <div class="footer__links d-f ai-c jc-spb">
+                    <div class="site__info">
+                        <ul class="d-f ai-c jc-spb">
+                            <li class="site__info-item">
+                                <a href="./zashdata.html" class="charact">Защита данных</a>
+                            </li>
+                            <li class="site__info-item">
+                                <a href="./pravinfo.html" class="charact">Правовая информация</a>
+                            </li>
+                            <li class="site__info-item">
+                                <a href="./coockie.html" class="charact">Куки-файлы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links__social">
+                        <ul class="d-f ai-c jc-spb">
+                            <li><a href="https://vk.com/mercedesbenzrussia"><img src="./img/socials/VK.png" alt=""></a></li>
+                            <li><a href="https://www.facebook.com/MercedesBenz/"><img src="./img/socials/Facebook.png" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/mercedesbenz/"><img src="./img/socials/Instagram.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="charact">© 2023. Mercedes-Benz AG. Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

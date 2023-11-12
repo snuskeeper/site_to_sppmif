@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MB-Tech</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-wrapper d-f ai-end">
+                <div class="header__logo-box">
+                    <a href="./welcome.html">
+                        <img src="./img/logo.png" alt="" class="header__logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="d-f ai-c nav__list">
+                        <li class="nav__item">
+                            <a href="./cars.html" class="nav__link">Автомобили</a>
+                            <div class="submenu"> <!-- Используем класс left для подпунктов слева -->
+                                <ul>
+                                    <li><a href="cars.html#amg-c">AMG C</a></li>
+                                    <li><a href="cars.html#amg-gle">AMG GLE</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./owners.html" class="nav__link">Владельцам</a>
+                            <div class="submenu left"> <!-- Используем класс left для подпунктов слева -->
+                                <ul>
+                                    <li><a href="owners.html#znak">Интерактивное знакомство</a></li>
+                                    <li><a href="owners.html#ruk">Онлайн-версия руководства по эксплуатации</a></li>
+                                    <li><a href="owners.html#app">Приложение Mercedes-Benz Guides</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./owners.html" class="nav__link">Сервис</a>
+                            <div class="submenu left"> <!-- Используем класс left для подпунктов слева -->
+                                <ul>
+                                    <li><a href="sto.html#garant">Гарантия и сервисные планы</a></li>
+                                    <li><a href="sto.html#to">Запись на ТО</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+    <main class="main"></main>
+        <div class="wrapper">
+            <div class="car__block">
+                <div class="guide__text">
+                    <h2 class="main__title">Руководство по эксплуатации</h2>
+                    <p class="main__subtitle" id = "znak" >Интерактивное знакомство</p> 
+                </div>
+                <div class="guide__pic">
+                    <img src="./img/car_keys.png" alt="" class="raz">
+                    <img src="./img/car_keys_re.png" alt="" class="dva">
+                </div>
+            </div>
+            <div class="online__version">
+                <h4 class="online__version-pretitle">Онлайн-версия руководства по эксплуатации</h4>
+                <hr>
+                <h2 class="online__version-title">Вся информация для уверенного обслуживания.<br>Также для более старых моделей.</h2>
+                <div class="functions d-f ai-c jc-spb">
+                    <div class="function__pic">
+                        <img src="./img/func_img.png" class="function__img" alt="">
+                    </div>
+                    <div class="function__text function__p">
+                        Ознакомиться с функциями, понять принцип работы элементов управления, ознакомиться с характеристиками: онлайн-версия руководства по эксплуатации предоставит Вам интерактивный доступ к различной информации о Вашемавтомобиле. Важные и интересные детали представлены в виде пояснений, иллюстраций и наглядных анимаций.
+                    </div>
+                </div>
+                <div class="function__link-box d-f ai-c">
+                    <div class="function__link-box__title" id = "ruk">
+                        PDF-версия руководства по эксплуатации
+                    </div>
+                    <a href="Mercedes-benz-w123-service-book-to-sternklassik-klub.pdf" download>
+                        <button class="more">
+                            Подробнее
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="application">
+                <h4 class="online__version-pretitle" id = "app">Приложение Guides
+                </h4>
+                <hr>
+                <h2 class="online__version-title">Приложение Mercedes-Benz Guides</h2>
+                <div class="functions d-f ai-c jc-spb">
+                    <div class="application">
+                        <img src="./img/application.png" class="appfunction__img" alt="">
+                        <img src="./img/application2.png" class="appfunction2__img" alt="">
+                    </div>
+                    <div class="function__text function__p">
+                        <h5 class="function__text-title">
+                            Руководство по эксплуатации автомобиля в вашем смартфоне
+                        </h5>
+                        <p class="function__text-p">
+                            Руководство по эксплуатации автомобиля для смартфона и планшета: приложение Mercedes-Benz Guides позволяет просматривать руководство по эксплуатации вашего Mercedes-Benz на смартфоне или планшете,содержит функцию поиска, а также полезные советы, например, в случае поломки. В настоящее время данные руководства по эксплуатации предлагаются не для всех классов автомобилей.
+                        </p>
+                        <div class="buttons d-f ai-c jc-spb">
+                            <button class="more" onclick="window.location.href='https://apps.apple.com/ru/app/my-mercedes/id603991625'">
+                                Apple App Store
+                            </button>
+                            
+                            <button class="more" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.daimler.ris.mercedesme.ece.android&hl=ru&pli=1'">
+                                Google Play Store
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <hr class="split">
+            <div class="footer-wrapper">
+                <div class="footer__links d-f ai-c jc-spb">
+                    <div class="site__info">
+                        <ul class="d-f ai-c jc-spb">
+                            <li class="site__info-item">
+                                <a href="./zashdata.html" class="charact">Защита данных</a>
+                            </li>
+                            <li class="site__info-item">
+                                <a href="./pravinfo.html" class="charact">Правовая информация</a>
+                            </li>
+                            <li class="site__info-item">
+                                <a href="./coockie.html" class="charact">Куки-файлы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links__social">
+                        <ul class="d-f ai-c jc-spb">
+                            <li><a href="https://vk.com/mercedesbenzrussia"><img src="./img/socials/VK.png" alt=""></a></li>
+                            <li><a href="https://www.facebook.com/MercedesBenz/"><img src="./img/socials/Facebook.png" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/mercedesbenz/"><img src="./img/socials/Instagram.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="charact">© 2023. Mercedes-Benz AG. Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
