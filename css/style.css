@@ -1,0 +1,749 @@
+/* open-sans-300 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/open-sans-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* open-sans-regular - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/open-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* open-sans-700 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/open-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* open-sans-800 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/open-sans-v27-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-v27-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+
+body{
+    background-color: black;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header{
+    margin: 3% 0 9%;
+}
+
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header-wrapper{
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.d-f{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ai-c{
+    align-items: center;
+}
+
+.ai-end{
+    align-items: flex-end;
+}
+
+.ai-s{
+    align-items: flex-start;
+}
+
+.header__logo{
+    min-width: 100%;
+}
+
+.nav{
+    min-width: 60%;
+}
+
+.nav__list{
+    font-size: 22px;
+    line-height: 30px;
+
+    justify-content: space-between;
+}
+
+.nav__link{
+    font-size: 22px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.main-wrapper{
+    margin: 0 0 0 auto;
+    width: 85%;
+}
+
+.main__text{
+    width: 32%;
+    min-width: 400px;
+    color: white;
+}
+
+.main__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+
+    margin-bottom: 5%;
+}
+
+.main__title_sto{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.main__subtitle{
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 9%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.first {
+    border: none; 
+    background: linear-gradient(97.61deg, #00C2FF 20.24%, #0029FF 87.13%);
+    box-shadow: 0px 0px 19px -3px #0069FF;
+    border-radius: 23.5px;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    padding: 11px 21px;
+    transition: background 0.3s ease, box-shadow 0.8s ease; 
+}
+
+.first:hover {
+    background: linear-gradient(97.61deg, #0029FF 20.24%, #00C2FF 87.13%);
+    box-shadow: 0px 0px 19px -3px #00A6FF;
+}
+
+.wrapper{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main__btn{
+    justify-content: space-between;
+    min-width: 352px;
+}
+
+.more {
+    background: linear-gradient(97.61deg, rgba(0, 194, 255, 0) 20.24%, rgba(0, 41, 255, 0) 87.13%);
+    border: 1px solid transparent; /* Начальная рамка прозрачная */
+    box-sizing: border-box;
+    border-radius: 23.5px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+
+    padding: 11px 35px;
+    transition: border 0.3s; /* Добавляем плавный переход для эффекта анимации */
+}
+
+.more:hover {
+    border: 1px solid #FFFFFF; /* Устанавливаем цвет рамки при наведении */
+}
+
+
+.main__pic {
+    width: 60%;
+    min-width: 443px;
+    background-image: url(../img/bg_car.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: left top;
+    transition: background-size 1s ease-in-out;
+  }
+  
+
+.main__pic:hover .main__car {
+    opacity: 0;
+    
+}
+
+.main__pic .main__car {
+    width: 100%;
+    
+    transition: opacity 1.8s ease; /* Add a smooth transition effect */
+}
+
+.main__pic:hover {
+    background-size: 85%; /* Adjust the background size on hover if needed */
+}
+
+.car__block{
+    color: white;
+    margin-bottom: 15%;
+}
+
+.car{
+    margin-bottom: 8%;
+}
+
+.main__car{
+    width: 100%;
+}
+
+.car__text{
+    width: 55%;
+}
+
+
+.car__pic {
+    padding-top: 10px;
+    width: 45%;
+    min-width: 599px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.slider .item img {
+    width: 100%;
+    transition: margin-top 1.5s ease;
+   
+}
+
+.demo:hover img.raz {
+    margin-top: 0;
+}
+
+.demo:hover img.dva {
+    margin-top: -300px; /* Adjust this value based on your needs */
+}
+
+.demo-horizontal {
+    overflow: hidden;
+}
+
+/* Additional CSS for the second slider */
+.demo-horizontal:hover img.sraz {
+    margin-left: 0;
+}
+
+.demo-horizontal:hover img.sdva {
+    margin-top: -300px; /* Adjust this value based on your needs */
+}
+
+
+.slider-dots {
+    text-align: center;
+}
+
+
+.car__img{
+    counter-increment: slide;
+}
+
+.car__info{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.car__info-list{
+    justify-content: space-between;
+}
+
+.info__item{
+    width: 26%;
+    min-width: 323px;
+}
+
+.charact{
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.value{
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.dop{
+    font-size: 24px;
+    line-height: 33px;
+    padding-top: 19px;
+}
+
+.condition{
+    margin-bottom: 7%;
+}
+
+.split{
+    color: white;
+    margin-bottom: 2%;
+}
+
+.footer-wrapper{
+    color: white;
+    padding-bottom: 4%;
+}
+
+.jc-spb{
+    justify-content: space-between;
+}
+
+.footer__links{
+    margin-bottom: 1%;
+}
+
+.links__info{
+    width: 45%;
+}
+
+.info__list{
+    width: 100%;
+}
+
+.site__info{
+    width: 45%;
+}
+
+.links__social{
+    width: 12%;
+}
+
+
+.guide__pic {
+    text-align: center;
+  }
+  
+  .guide__pic img {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    position: relative;
+    transition: all 5s linear;
+  }
+  
+  .guide__pic img:nth-child(1) {
+    transform: rotate(0);
+  }
+  
+  .guide__pic img:nth-child(2) {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  
+  .guide__pic:hover img:nth-child(1) {
+    transform: rotate(180deg);
+  }
+  
+  .guide__pic:hover img:nth-child(2) {
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  
+.guide__text{
+    color: white;
+    width: 40%;
+}
+
+
+.online__version{
+    color: white;
+    margin-bottom: 10%;
+}
+
+.online__version-pretitle{
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.online__version-title{
+    width: 80%;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 3%;
+}
+
+.online__version_sto-title{
+    width: 80%;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 49px;
+    margin-bottom: 3%;
+    margin-left: 20%
+}
+
+
+
+.function__pic{
+    width: 45%;
+    min-width: 450px;
+}
+
+.function__img{
+    width: 100%;
+}
+
+.function__text{
+    width: 45%;
+    min-width: 367px;
+}
+
+.function__text-p{
+    margin-bottom: 4%;
+    font-size: 16;
+}
+
+.function__text-p_sto
+{
+    margin-bottom: 4%;
+    text-align: left;
+}
+
+
+.function__p{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.function__psto{
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.function__link-box{
+    color: white;
+}
+
+.function__link-box__title{
+    font-size: 36px;
+    line-height: 49px;
+    width: 70%;
+    margin-right: 10%;
+}
+
+.function__text-title{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 19px;
+    margin-bottom: 2%;
+}
+
+.application{
+    color: white;
+    margin-bottom: 15%;
+}
+
+.buttons{
+    width: 75%;
+}
+
+
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+#popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 22%;
+    top: 15%;
+    overflow: auto;
+    background-color: #242222;
+
+    width: 34%;
+    min-width: 700px;
+    height: 37vh;
+
+    font-weight: 600;
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5% 8%;
+}
+
+.popup__wrapper{
+    width: 100%;
+}
+
+.popup__title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 58px;
+
+    width: 100%;
+    text-align: center;
+}
+
+.form{
+    margin-bottom: 87px;
+}
+
+.total{
+    width: 50%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.prefix{
+    font-size: 24px;
+    line-height: 25px;
+    margin-right: 5%;
+}
+
+.input__prefix{
+    width: 30%;
+}
+
+#set, #service{
+    width: 200px;
+    height: 23px;
+
+    background: #5F5F5F;
+    border-radius: 8.5px;
+}
+
+.popup__close{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    margin-left: 100%;
+}
+
+.popup__close:hover, .popup__close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.prefix{
+    margin-bottom: 8%;
+}
+
+
+.application {
+    position: relative;
+    display: block;
+    min-height: 10px;
+}
+
+.application img {
+    
+    min-width: 300px;
+    
+    position: absolute;
+    border-radius: 53px;
+    transition: opacity 0.5s ease-in-out; /* добавляем плавный переход для плавности изменений */
+}
+
+.application img.appfunction2__img {
+    opacity: 0;
+}
+
+.application img:hover {
+    opacity: 0; /* При наведении на любое изображение, оно становится прозрачным */
+}
+
+.application img:hover.appfunction2__img {
+    opacity: 1; /* При наведении на второе изображение, оно становится непрозрачным */
+}
+
+
+
+.nav__list {
+    position: relative;
+  }
+  
+  .nav__item {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .nav__item div,
+  .nav__list:hover .nav__item:not(:hover) div {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -1px;
+    background: #c2c0c0;
+    cursor: defargb(76, 75, 75);
+    visibility: hidden;
+  }
+  
+  .nav__item:hover div,
+  .nav__item:focus div {
+    visibility: visible;
+  }
+  
+  .nav__item:hover {
+    background-color: #313131;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .nav__item:focus {
+    background: #252525;
+  }
+
+
+  .nav__link {
+    text-decoration: none;
+    outline: none;
+}
+
+  /* Стили для основного меню */
+.nav__item {
+    display: inline-block; /* Отображаем элементы меню в ряд */
+    margin-right: 15px; /* Расстояние между элементами меню */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav__link {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #fffcfc; /* Цвет текста */
+    padding: 10px; /* Внутренний отступ для текста */
+    display: block; /* Преобразуем в блочный элемент для применения отступов */
+}
+
+/* Стили для выпадающего подменю */
+.submenu {
+    display: none; /* По умолчанию подменю скрыто */
+    position: absolute; /* Позиционируем абсолютно относительно родительского элемента */
+    background-color: #ffffff; /* Цвет фона подменю */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для подменю */
+    font-family: 'Open Sans', sans-serif; /* Замените 'Your Font' на ваш шрифт */
+}
+
+.submenu ul {
+    list-style: none; /* Убираем маркеры у списка подменю */
+    padding: 0; /* Убираем внутренний отступ у списка подменю */
+}
+
+.submenu li {
+    padding: 10px; /* Внутренний отступ для текста в подменю */
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #000; /* Черный цвет текста */
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+}
+
+/* Hover-эффект для пунктов меню и отображение подменю */
+.nav__item:hover .submenu {
+    display: block;
+    transition: display 3.5s ease-in-out;
+}
+
+
+
+/* Убираем выход текста за границы элемента меню */
+.nav__link, .submenu {
+    box-sizing: border-box;
+}
+
+/* Ограничиваем ширину текста и скрываем переполнение */
+.nav__link, .submenu a {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content-section {
+    
+    color: white; /* Устанавливаем белый цвет текста */
+    font-family: 'Open Sans', sans-serif; /* Используем шрифт Open Sans */
+    padding: 50px; /* Добавляем внутренние отступы */
+    margin: 20px; /* Добавляем внешние отступы по всем сторонам */
+    margin-left: 200px; /* Отступ слева */
+    margin-right: 100px; /* Отступ справа */
+    line-height: 1.5; /* Устанавливаем высоту строки */
+    /* Дополнительные стили по вашему усмотрению */
+}
+
+/* Пример: убираем междустрочные интервалы */
+.content-section p {
+    margin-bottom: 10px;
+    overflow-wrap: break-word; /* Перенос слов */
+}
+
+/* Для h2 сделаем жирный шрифт */
+.content-section h2, h3 {
+    font-weight: bold;
+}
+
+.content-section h1 {
+    font-weight: bold;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+.site__info-item {
+    transition: border 0.3s ease; /* Плавный переход для рамки */
+    border: 2px solid transparent; /* Прозрачная рамка по умолчанию */
+    border-radius: 5px; /* Закругление углов */
+    padding: 8px; /* Добавляем внутренний отступ для увеличения размера рамки */
+}
+
+.site__info-item:hover {
+    border-color: white; /* Изменяем цвет рамки при наведении */
+}
+
